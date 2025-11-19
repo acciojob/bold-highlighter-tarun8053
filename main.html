@@ -17,7 +17,7 @@ const linkTag = document.querySelector("a");
 	const strongsTag = document.querySelectorAll("strong");
 function highlight() {
     //Write your code here
-    linkTag.addEventListener("mouseenter",()=>{
+    linkTag.addEventListener("mouseover",()=>{
          strongsTag.forEach(tag => {
      tag.style.color = "rgb(0, 128, 0)";
    });
@@ -31,7 +31,7 @@ function highlight() {
 
 
 function return_normal() {
-    linkTag.addEventListener("mouseleave",()=>{
+    linkTag.addEventListener("mouseout",()=>{
          strongsTag.forEach(tag => {
      tag.style.color = "rgb(0, 0, 0)";
    });
